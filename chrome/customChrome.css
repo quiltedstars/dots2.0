@@ -1,0 +1,62 @@
+#main-window {
+	-moz-appearance: -moz-window-titlebar !important;
+	border-radius: 40px !important;
+}
+:root[tabsintitlebar] #nav-bar {
+	border: 5px !important;
+	border-bottom: none !important;
+	box-shadow: var(--gnome-headerbar-box-shadow) !important;
+	border-radius: 40px !important;
+}
+:root[tabsintitlebar]:not([inFullscreen]):not([sizemode="maximized"]) #nav-bar {
+	border-radius: 70px !important;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+	--gnome-inactive-toolbar-background: #15151E !important;
+	--gnome-inactive-headerbar-background: #15151E !important;
+	--gnome-tabstoolbar-background: #15151E !important;
+	--gnome-toolbar-background: #15151E !important;
+	--gnome-headerbar-background: #15151E !important;	
+	
+	--gnome-inactive-tabbar-tab-active-background: #1D273A !important;
+	--gnome-tabbar-tab-active-background: #1D273A !important;
+	--gnome-tabbar-tab-hover-background: #1D273A !important;
+	
+	--gnome-inactive-tabbar-tab-background: #20262C !important;	
+	--gnome-tabbar-tab-background: #20262C !important;	
+}
+
+
+.tab-close-button {
+	transition: all 0.3s ease !important;
+    border-radius: 40px !important;
+}
+
+.tabbrowser-tab > .tab-stack > .tab-background {
+	border-radius: 50px !important;
+}
+
+toolbarbutton.bookmark-item {
+	transition: all 0.3s ease !important;
+    padding: 3px 5px !important;
+	border-radius: 40px !important;
+}
+
+.titlebar-button > .toolbarbutton-icon {
+	transition: all 0.3s ease !important;
+	list-style-image: none;
+	border-radius: 40px!important;
+	background: rgba(var(--main-bgcolor), 1)!important;
+}
+
+/*================== NEW TAB BUTTON ==================*/
+toolbar #tabs-newtab-button:not([disabled="true"]):not([checked]):not([open]):not(:active) > .toolbarbutton-icon,
+toolbar #tabs-newtab-button:not([disabled="true"]):-moz-any([open], [checked], :hover:active) > .toolbarbutton-icon,
+toolbar #tabs-newtab-button:not([disabled="true"]):-moz-any([open], [checked], :active) > .toolbarbutton-icon {
+	transition: all 0.3s ease !important;
+	fill: rgba(var(--main-bgcolor), 1) !important;
+	border-radius: 40px !important;
+	background-color: rgba(var(--transparent-bgcolor), 0.2) !important;
+}
+
