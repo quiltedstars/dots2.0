@@ -1,3 +1,7 @@
+![Desktop 1](Desktop.png)
+![Desktop 2](Desktop2.png)
+![Desktop 3](Desktop4.png)
+
 # dots2.0
 A collection of new dotfiles for my VoidLinux install.
 
