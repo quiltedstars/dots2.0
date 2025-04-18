@@ -1,0 +1,72 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 2,
+  "final_space": true,
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "session",
+          "style": "diamond",
+          "trailing_diamond": "\ue0b0",
+          "template": " \udb82\udced ",
+          "background": "#75507B",
+          "foreground": "#ffffff"
+        },
+        {
+          "type": "path",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "template": " {{ .Path }} ",
+          "properties": {
+            "cycle_folder_separator": true,
+            "folder_separator_icon": " \ue0b1 ",
+            "home_icon": "\uf7db",
+            "mapped_locations": {
+              "C:\\temp": "\ue799"
+            },
+            "max_depth": 100,
+            "style": "full"
+          },
+          "background": "p:1l",
+          "foreground": "p:text"
+        },
+        {
+          "type": "git",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "template": " ➜ ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}) ",
+          "properties": {
+            "branch_icon": "",
+            "fetch_stash_count": true,
+            "fetch_status": false,
+            "fetch_upstream_icon": true
+          },
+          "background": "p:2d",
+          "foreground": "p:text"
+        },
+        {
+          "type": "node",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
+          "background": "p:3d",
+          "foreground": "p:text"
+        }
+      ],
+      "newline": true
+    }
+  ],
+  "palette": {
+    "1d": "#75507b",
+    "1l": "#ad7fa8",
+    "2d": "#3465a4",
+    "2l": "#729fcf",
+    "3d": "#edd400",
+    "3l": "#fce94f",
+    "4d": "#cc0000",
+    "text": "#FFFFFF"
+  }
+}
